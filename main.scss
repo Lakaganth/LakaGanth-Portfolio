@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-image: url("img/portBG-screen.png");
+  background-size: 100vw 100vh !important;
+
+  header {
+    height: 100px;
+
+    position: relative;
+
+    .ham {
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+        padding-top: 8%;
+        padding-right: 15px;
+      }
+    }
+
+    .nav {
+      visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url("img/menuPath-01.png");
+      background-size: 450px;
+      background-repeat: no-repeat;
+      background-position-y: -10px;
+
+      height: 100vh;
+      width: 100vw;
+
+      .close {
+        display: flex;
+        justify-content: flex-end;
+
+        img {
+          padding-top: 8%;
+          padding-right: 15px;
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        li {
+          padding: 8% 0;
+          a {
+            font-size: 2em;
+            color: #fff;
+            letter-spacing: 0.25em;
+            text-shadow: 5px 4px 7px rgba(0, 0, 0, 0.41);
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    .welcome-msg {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        padding: 20% 0 10% 0;
+        font-size: 2em;
+        color: #fff;
+
+        span {
+          color: #ff25db;
+        }
+      }
+
+      h3 {
+        font-size: 1.7em;
+        color: #fff;
+        margin-bottom: 10%;
+        span {
+          border-bottom: #ff25db 2px solid;
+        }
+      }
+
+      .btn-more {
+        height: 40px;
+        width: 120px;
+        border-radius: 1em;
+        border: none;
+        cursor: pointer;
+
+        a {
+          font-family: "Raleway", sans-serif;
+          color: #2f203e;
+          font-size: 1rem;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+}
