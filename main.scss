@@ -15,16 +15,37 @@ li {
   list-style: none;
 }
 
-body {
-  background-image: url("img/portBG-screen.png");
-  background-size: 100vw 100vh !important;
+header {
+  // height: 100px;
 
-  header {
-    height: 100px;
+  position: relative;
 
-    position: relative;
+  .ham {
+    position: absolute;
+    top: 10px;
+    right: 10px;
 
-    .ham {
+    img {
+      padding-top: 8%;
+      padding-right: 22px;
+    }
+  }
+
+  .nav {
+    visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("img/menuPath-01.png");
+    background-size: 450px;
+    background-repeat: no-repeat;
+    background-position-y: -10px;
+
+    height: 100vh;
+    width: 100vw;
+
+    .close {
       display: flex;
       justify-content: flex-end;
 
@@ -34,60 +55,44 @@ body {
       }
     }
 
-    .nav {
-      visibility: hidden;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-image: url("img/menuPath-01.png");
-      background-size: 450px;
-      background-repeat: no-repeat;
-      background-position-y: -10px;
-
-      height: 100vh;
-      width: 100vw;
-
-      .close {
-        display: flex;
-        justify-content: flex-end;
-
-        img {
-          padding-top: 8%;
-          padding-right: 15px;
-        }
-      }
-
-      ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        li {
-          padding: 8% 0;
-          a {
-            font-size: 2em;
-            color: #fff;
-            letter-spacing: 0.25em;
-            text-shadow: 5px 4px 7px rgba(0, 0, 0, 0.41);
-          }
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      li {
+        padding: 5.5% 0;
+        a {
+          font-size: 2em;
+          color: #fff;
+          letter-spacing: 0.15em;
+          text-shadow: 5px 4px 7px rgba(0, 0, 0, 0.41);
+          font-family: "Raleway", sans-serif;
         }
       }
     }
   }
+}
+
+.home {
+  background-image: url("img/portBG-screen.png");
+  background-size: 100vw 100vh;
 
   main {
-    .welcome-msg {
+    .home {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       h2 {
+        margin: 25% 0 0 0;
         padding: 20% 0 10% 0;
         font-size: 2em;
         color: #fff;
 
         span {
           color: #ff25db;
+          // TODO Change the contrast
         }
       }
 
@@ -114,6 +119,30 @@ body {
           font-weight: 900;
         }
       }
+    }
+  }
+}
+
+.about {
+  background-image: url("img/Portfolio\ about\ me-01.png");
+  background-size: 100vw 100vh;
+  height: 100vh;
+  width: 100vw;
+  h2 {
+    color: #fff;
+    padding: 35% 0 10% 5%;
+    font-size: 1.9em;
+  }
+
+  h3 {
+    color: #fff;
+    padding: 2% 0 10% 5%;
+  }
+  article {
+    margin: 0 5% 0 8%;
+    p {
+      color: #fff;
+      padding: 0 2% 4% 5%;
     }
   }
 }
